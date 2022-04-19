@@ -1,0 +1,383 @@
+/*****************************************************TAG SELECTORS*****************************************************/
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+    color: #F9B248;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;;
+}
+
+a {
+    text-decoration: none;
+    color: #F9B248;
+}
+
+a:hover {
+    color: #FC3A52;
+    font-weight: bold;
+}
+
+hr {
+    background-color: #F9B248;
+    margin: 50px;
+}
+
+/*****************************************************CLASS SELECTORS*****************************************************/
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.primary-header {
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.profile-img-sec {
+    display: inline-block;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0 0% 0% / 0.3);
+    backdrop-filter: blur(0.75rem);
+    border-radius: 20px;
+    border: #FC3A52 3px solid;
+}
+
+.primary-navigation a > [aria-hidden = "true"] {
+    font-weight: 700;
+    margin-inline-end: 0.75em;
+}
+
+/* .parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+} */
+
+.bio-desc {
+    text-align: right;
+    padding: 20px;
+}
+
+.bio-desc-1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 40px auto;
+}
+
+.bio-desc-2 {
+    font-size: 25px;
+}
+
+.title-icon {
+    margin: auto;
+}
+
+/* .bio-desc {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    background-color: #F9B248;
+    color: black;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+} */
+
+.span-9 {
+    grid-column: 6 / 13;
+}
+
+.name {
+    font-size: 3.5vw;
+}
+
+.span-6 {
+    grid-column: 4 / 13;
+}
+
+.desc-1 {
+    font-size: 2vw;
+}
+
+.span-3 {
+    grid-column: 2 / 13;
+}
+
+.desc-2 {
+    font-size: 2vw;
+}
+
+.title-btn {
+    padding: 20px;
+    background-color: #E8D5B7;
+    color: #FC3A52;
+    font-size: 20px;
+    margin-top: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.title-btn:hover {
+    background-color: #FC3A52;
+    color: #E8D5B7;
+}
+
+.quote {
+    padding: 30px;
+    background-color: #F9B248;
+    border-radius: 20px;
+    color: black;
+    /* font-weight: bold; */
+    font-size: 40px;
+    margin: 30px 25%;
+    font-family: 'Lily Script One', cursive;
+}
+
+.heading {
+    margin: 40px auto;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.edu-slab {
+    background-color: #FC3A52;
+    color: #E8D5B7;
+    padding: 30px;
+    margin: 80px 7%;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.ssn-img {
+    width: 65%;
+    margin: 30px;
+}
+
+.ssm-img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.edu-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.edu-inst {
+    font-size: 25px;
+}
+
+.edu-batch {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skill-block {
+    margin: 50px 15%;
+}
+
+.skill-row {
+    margin: 30px;
+}
+
+.skill-slab {
+    background-color: #FC3A52;
+    color: #E8D5B7;
+    padding-inline: 40px;
+    border-radius: 20px;
+    margin: 15px;
+    font-size: 30px;
+    display: inline;
+}
+
+.footer-heading {
+    margin: 40px auto;
+    font-weight: bold;
+    font-size: 40px;
+    color: #E8D5B7;
+}
+
+.social-row {
+    margin: 50px 10%;
+}
+
+.mobile-social {
+    display: none;
+}
+
+.social-card {
+    background-color: #E8D5B7;
+    color: #FC3A52;
+    padding: 30px;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    width: 15%;
+}
+
+.social-id {
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+/*****************************************************ID SELECTORS*****************************************************/
+
+#profile-img {
+    width: 10%;
+    margin: 2rem;
+    border-radius: 50%;
+}
+
+#bio-profile-img {
+    display: none;
+}
+
+#bio-sec {
+    margin: 40px;
+    margin-top: 150px;
+}
+
+#title-btns {
+    margin: auto;
+}
+
+#quote-1 {
+    display: grid;
+}
+
+/*****************************************************MEDIA QUERIES*****************************************************/
+
+@media (max-width: 1140px) {
+    .primary-navigation {
+        z-index: 1000;
+        flex-direction: column;
+        inset: 0 0 0 30%;
+        position: fixed;
+        padding: min(30vh, 10rem) 2em;
+        --gap: 2em;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+        border: none;
+        color: #f59506;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translate(0%);
+    }
+
+    .nav-no {
+        color: #FC3A52;
+        font-weight: bold;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        aspect-ratio: 1;
+        width: 2rem;
+        top: 2rem;
+        right: 2rem;
+        background-color: white;
+        border-radius: 10px;
+        /* background: url('images/bars-solid.svg');
+        background-repeat: no-repeat; */
+        border: 0;
+    }
+
+    #bio-sec {
+        text-align: center;
+    }
+
+    .bio-desc {
+        border-radius: 10px;
+        display: inline;
+    }
+
+    .span-3, .span-6, .span-9 {
+        grid-column: 3 / 10;
+    }
+
+    .quote {
+        font-size: 28px;
+        margin: 30px 15%;
+    }
+
+    .skill-slab {
+        display: block;
+        margin: 30px;
+        font-size: 15px;
+    }
+
+    .social-row {
+        display: none;
+    }
+
+    .social-id {
+        color: #FC3A52;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .mobile-social {
+        display: inline-block;
+        margin: 30px 20%;
+        display: grid;
+        place-items: center;
+    }
+
+    .mobile-social-row {
+        margin: 20px;
+    }
+
+    .mobile-social-card {
+        margin: 30px;
+        border-radius: 10px;
+        background-color: #E8D5B7;
+    }
+}
+
+@media (max-width: 767px) {
+    #profile-img {
+        display: none;
+    }
+
+    #bio-profile-img {
+        display: inline;
+        width: 45%;
+        margin-inline: auto;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 40em) {
+    .primary-navigation {
+        padding: 2rem;
+    }
+
+    .primary-navigation li {
+        padding-inline: clamp(3em, 10vh, 8em);
+    }
+}

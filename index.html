@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- navbar js -->
+    <script src="js/nav.js" defer></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/70b8629cf1.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+
+
+    <title>Gokul R</title>
+</head>
+<body>
+    <section id="title-sec">
+        <!-- navbar -->
+        <header class="primary-header flex fixed-top">
+            <img src="images/profile-img.jpg" alt="profile-img" id="profile-img">
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+            <nav>
+                <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
+                    <li class="active">
+                        <a class="text-uppercase" href="index.html"><span aria-hidden="true" class="nav-no">01</span>Home</a>
+                    </li>
+                    <li>
+                        <a class="text-uppercase" href="projects.html"><span aria-hidden="true" class="nav-no">02</span>Projects</a>
+                    </li>
+                    <li>
+                        <a class="text-uppercase" href="certifications.html"><span aria-hidden="true" class="nav-no">03</span>Certifications</a>
+                    </li>
+                    <li>
+                        <a class="text-uppercase" href="contact.html"><span aria-hidden="true" class="nav-no">04</span>Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- bio-sec -->
+        <!-- <div id="bio-sec" class="parent">
+            <p class="bio-desc span-9 name">Gokul Prakash R</p>
+            <p class="bio-desc span-6 desc-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p class="bio-desc span-3 desc-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, temporibus?</p>
+        </div> -->
+
+        <div id="bio-sec" class="row">
+            <img src="images/profile-img.jpg" alt="profile-img" id="bio-profile-img">
+            <div class="col-md-6 bio-desc">
+                <p class="bio-desc-1">Gokul Prakash R</p>
+                <p class="bio-desc-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="bio-desc-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, temporibus?</p>
+            </div>
+            <div class="col-md-6 title-icon">
+                <i class="fa-solid fa-laptop-code fa-10x"></i>
+            </div>
+        </div>
+
+        <div id="title-btns" class="row">
+            <a href="projects.html" class="title-btn col-lg-6">PROJECTS</a>
+            <a href="contact.html" class="title-btn col-lg-6">CONTACT</a>
+        </div>
+
+    </section>
+
+    <hr size="10px" noshade>
+
+    <section id="quote-1">
+        <div class="quote">
+            <p>" Web design is not just about creating pretty layouts. It’s about understanding the marketing challenge behind your business. ”</p>
+        </div>
+    </section>
+
+    <hr size="10px" noshade>
+
+    <section id="edu-sec">
+        <div class="heading">
+            <p>Education</p>
+        </div>
+
+        <div class="edu-slab row">
+            <div class="col-md-4 edu-img">
+                <img src="images/ssn-logo.png" alt="ssn-logo" class="ssn-img">
+            </div>
+            <div class="col-md-8">
+                <p class="edu-title">B.E Computer Science and Engineering</p>
+                <p class="edu-inst">Sri Sivasubramaniya Nadar College Of engineering</p>
+                <p class="edu-batch">2020 - 2024</p>
+            </div>
+        </div>
+
+        <div class="edu-slab row">
+            <div class="col-md-8">
+                <p class="edu-title">10 +2 Equivalent</p>
+                <p class="edu-inst">Srimathi Sundaravalli Memorial School</p>
+                <p class="edu-batch">2020 Batch</p>
+            </div>
+            <div class="col-md-4 edu-img">
+                <img src="images/ssm-logo.png" alt="ssm-logo" class="ssm-img">
+            </div>
+        </div>
+    </section>
+
+    <hr size="10px" noshade>
+
+    <section id="quote-2">
+        <div class="quote">
+            <p>" If there’s one thing you learn by working on a lot of different Web sites, it’s that almost any design idea–no matter how appallingly bad–can be made usable in the right circumstances, with enough effort. "</p>
+        </div>
+    </section>
+
+    <hr size="10px" noshade>
+
+    <section id="skills-sec">
+        <div class="heading">
+            <p>Skills</p>
+        </div>
+
+        <div class="skill-block">
+            <div class="skill-row">
+                <p class="skill-slab">C++</p>
+                <p class="skill-slab">C</p>
+                <p class="skill-slab">Python</p>
+                <p class="skill-slab">Java</p>
+                <p class="skill-slab">HTML</p>
+            </div>
+            <div class="skill-row">
+                <p class="skill-slab">CSS</p>
+                <p class="skill-slab">JavaScript</p>
+                <p class="skill-slab">NodeJS</p>
+            </div>
+            <div class="skill-row">
+                <p class="skill-slab">Bootstrap</p>
+                <p class="skill-slab">DSA</p>
+                <p class="skill-slab">SQL</p>
+                <p class="skill-slab">ElectronJS</p>
+            </div>
+        </div>
+    </section>
+
+    <hr size="10px" noshade>
+
+    <section id="footer-sec">
+        <div class="footer-heading">
+            <p>My Social Handles</p>
+        </div>
+
+        <div class="row social-row">
+            <div class="col-md-3">
+                <div>
+                    <a href="https://www.linkedin.com/in/gokul-r-227326200/"><i class="fa-brands fa-linkedin fa-5x"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div>
+                    <a href="https://www.instagram.com/gokul_r_prakash/"><i class="fa-brands fa-instagram fa-5x"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div>
+                    <a href="https://github.com/Gokul2604"><i class="fa-brands fa-github fa-5x"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div>
+                    <a href="https://twitter.com/GokulRPrakash1"><i class="fa-brands fa-twitter fa-5x"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-social row">
+            <div class="mobile-social-row col-3">
+                <a href="https://www.linkedin.com/in/gokul-r-227326200/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+            </div>
+            <div class="mobile-social-row col-3">
+                <a href="https://www.instagram.com/gokul_r_prakash/"><i class="fa-brands fa-instagram fa-3x"></i></a>
+            </div>
+            <div class="mobile-social-row col-3">
+                <a href="https://github.com/Gokul2604"><i class="fa-brands fa-github fa-3x"></i></a>
+            </div>
+            <div class="mobile-social-row col-3">
+                <a href="https://twitter.com/GokulRPrakash1"><i class="fa-brands fa-twitter fa-3x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS modules -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- LinkedIn: <i class="fa-brands fa-linkedin"></i> -->
+<!-- Instagram: <i class="fa-brands fa-instagram"></i> -->
+<!-- Github: <i class="fa-brands fa-github"></i> -->
+<!-- Twitter: <i class="fa-brands fa-twitter"></i> -->
